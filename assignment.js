@@ -1,7 +1,6 @@
 // https://github.com/ishtiak-ahmed/js-assignment
 
 // Convert kilometer to merter.
-// Handle error for bonus
 function kilometerToMeter(kilometer) {
     if (typeof kilometer != 'number' || kilometer < 0) {
         return "Please enter valid distance."
