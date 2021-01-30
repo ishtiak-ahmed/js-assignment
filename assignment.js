@@ -46,7 +46,7 @@ function hotelCost(days) {
 // mega friend, take names collection as array
 // return the longest name
 function megaFriend(names) {
-    if (names.length == 0) {
+    if (!(Array.isArray(names)) || names.length == 0) {
         return "Please enter a valid array."
     }
     let longest = names[0];
@@ -66,5 +66,5 @@ function megaFriend(names) {
 // console.log(hotelCost(31));
 
 // let sweetNames = ['Jane', "Leena", 'Hermione', 'Georgina', 'Emma']
-
 // console.log(megaFriend(sweetNames))
+// console.log(megaFriend('Hermione'))
